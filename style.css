@@ -1,8 +1,9 @@
+/* https://coolors.co/5f0f40-9a031e-fb8b24-e36414-0f4c5c */
 * {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  margin: 7em 20em 5em 20em;
+  margin: 7em 19em 5em 19em;
 }
 h1 {
   text-align: center;
@@ -24,9 +25,11 @@ img {
   margin-right: auto;
   width: 90%;
   border-radius: 10px;
+  box-shadow: 3px 3px 10px #000000;
 }
 iframe {
   border-radius: 10px;
+  box-shadow: 3px 3px 10px #000000;
 }
 a {
   position: relative;
@@ -38,19 +41,107 @@ a {
   font-size: 14px;
   letter-spacing: 2px;
   border-radius: 20px;
-  background: #00b8ff;
+  background: #9a031e;
   overflow: hidden;
 }
+a:hover {
+  background-color: #e36414;
+}
 nav {
-  background-color: #f7b801 !important;
+  background-color: #fb8b24 !important;
 }
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #3d348b !important;
+  background-color: #5f0f40 !important;
   color: white;
   text-align: center;
   padding: 5px;
+}
+input {
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px 0 10px 0;
+  border-width: 1px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+input {
+  width: 50px;
+}
+#title {
+  font-size: 20px;
+}
+button {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+  border-color: #0f4c5c;
+  background-color: #0f4c5c;
+  color: white;
+}
+.submit {
+  font-size: 20px !important;
+}
+header,
+main,
+footer {
+  padding-left: 240px;
+}
+
+@media only screen and (max-width: 992px) {
+  header,
+  main,
+  footer {
+    padding-left: 0;
+  }
+}
+table {
+  border-spacing: 15px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-radius: 10px;
+
+  margin: 10px;
+  padding: 10px;
 }

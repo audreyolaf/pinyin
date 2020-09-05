@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Pinyin</title>
+    <link rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-light">
+      <a class="navbar-brand" href="pinyin.html">Pinyin</a>
+      <a
+        class="nav-link dropdown-toggle"
+        href="#"
+        id="navbarDropdownMenuLink"
+        role="button"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Guides
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="vowels.html">-a, -o, -e, -i, -u</a>
+        <a class="dropdown-item" href="isound.html">-i, -ou, -uan</a>
+        <a class="dropdown-item" href="asound.html">-ia, -ng, -in</a>
+        <a class="dropdown-item" href="usound.html">-un, -e, -u</a>
+      </div>
+      <a class="nav-link" href="instructions.html">Instructions</a>
+      <a class="nav-link" href="tips.html">Tips</a>
+      <a class="nav-link" href="practice.html">Practice</a>
+      
+    </nav>
+    <h1>✏ Practice</h1>
+    <!-- type="button" class="b1" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id-->
+    <button id="b1" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ā</button>
+    <button id="b2" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">á</button>
+    <button id="b3" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ǎ</button>
+    <button id="b4" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">à</button>
+    <button id="b5" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ē</button>
+    <button id="b6" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">é</button>
+    <button id="b7" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ě</button>
+    <button id="b8" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">è</button>
+    <button id="b9" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ī</button>
+    <button id="b10" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">í</button>
+    <button id="b11" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ǐ</button>
+    <button id="b12" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ì</button>
+    <button id="b13" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ō</button>
+    <button id="b14" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ó</button>
+    <button id="b15" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ǒ</button>
+    <button id="b16" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ò</button>
+    <button id="b17" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ū</button>
+    <button id="b18" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ú</button>
+    <button id="b19" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ǔ</button>
+    <button id="b20" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ù</button>
+    <button id="b21" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ǖ</button>
+    <button id="b22" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ǘ</button>
+    <button id="b23" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ǚ</button>
+    <button id="b24" type="button" data-toggle="tooltip" data-placement="top" title="Copy" onclick="copyClipboard(this.id)">ǜ</button>
+    <!-- <button>ü</button> -->
+    <form id="quiz">
+      <br>
+      <label id="title" >A. b p m f</label> <br>
+      <label id="title" >1. 福</label>
+      <input placeholder="ans" type="text" class="q1">
+      <label id="title" >ú</label> <br>
+
+      <label id="title" >2. 爸</label>
+      <input placeholder="ans" type="text" class="q2"> 
+      <label id="title" >à</label> <br>
+
+      <label id="title" >3. 媽</label>
+      <input placeholder="ans" type="text" class="q3"> 
+      <label id="title" >à</label> <br>
+
+      <label id="title" >4. 怕</label>
+      <input placeholder="ans" type="text" class="q4"> 
+      <label id="title" >à</label> <br>
+
+      <br>
+      <label id="title" >B. d t n l</label> <br>
+      <label id="title" >5. 大</label>
+      <input placeholder="ans" type="text" class="q5"> 
+      <label id="title" >à</label> <br>
+
+      <label id="title" >6. 提</label>
+      <input placeholder="ans" type="text" class="q6"> 
+      <label id="title" >í</label> <br>
+
+      <label id="title" >7. 你</label>
+      <input placeholder="ans" type="text" class="q7"> 
+      <label id="title" >ǐ</label> <br>
+
+      <label id="title" >8. 路</label>
+      <input placeholder="ans" type="text" class="q8"> 
+      <label id="title" >ù</label> <br>
+
+      <br>
+      <label id="title" >C. g k h</label> <br>
+      <label id="title" >9. 咖</label>
+      <input placeholder="ans" type="text" class="q9"> 
+      <label id="title" >ā</label> <br>
+
+      <label id="title" >10. 歌</label>
+      <input placeholder="ans" type="text" class="q10"> 
+      <label id="title" >ē</label> <br>
+
+      <label id="title" >11. 盒</label>
+      <input placeholder="ans" type="text" class="q11"> 
+      <label id="title" >é</label> <br>
+
+      <br>
+      <label id="title" >D. b p m f d t n l g k h</label> <br>
+      <label id="title" >12. 踢</label>
+      <input placeholder="ans" type="text" class="q12"> 
+      <label id="title" >ī</label> <br>
+
+      <label id="title" >13. 麼</label>
+      <input placeholder="ans" type="text" class="q13"> 
+      <label id="title" >e</label> <br>
+
+      <label id="title" >14. 服</label>
+      <input placeholder="ans" type="text" class="q14"> 
+      <label id="title" >ú</label> <br>
+
+      <br>
+      <label id="title" >15. 八個 b</label>
+      <input placeholder="ans" type="text" class="q15">
+      <label id="title" >g</label> 
+      <input placeholder="ans" type="text" class="q151"> <br>
+
+      <label id="title" >16. 蠟筆 l</label>
+      <input placeholder="ans" type="text" class="q16"> 
+      <label id="title" >b</label> 
+      <input placeholder="ans" type="text" class="q161"> <br>
+
+      <label id="title" >17. 馬路 m</label>
+      <input placeholder="ans" type="text" class="q17"> 
+      <label id="title" >l</label> 
+      <input placeholder="ans" type="text" class="q171"> <br>
+
+      <label id="title" >18. 拿筆 n</label>
+      <input placeholder="ans" type="text" class="q18"> 
+      <label id="title" >b</label>
+      <input placeholder="ans" type="text" class="q181"> <br>
+
+      <label id="title" >19. 哪裡 n</label>
+      <input placeholder="ans" type="text" class="q19"> 
+      <label id="title" >l</label> 
+      <input placeholder="ans" type="text" class="q191"> <br>
+
+      <label id="title" >20. 喝可樂 h</label>
+      <input placeholder="ans" type="text" class="q20"> 
+      <label id="title" >k</label> 
+      <input placeholder="ans" type="text" class="q201"> 
+      <label id="title" >l</label> 
+      <input placeholder="ans" type="text" class="q202"> <br>
+
+      <label id="title" >21. 大哥 d</label>
+      <input placeholder="ans" type="text" class="q21"> 
+      <label id="title" >g</label> 
+      <input placeholder="ans" type="text" class="q211"> <br>
+      <button
+        class="submit"
+      />
+        Check answers
+    </button>
+    </form>
+    <section class="list"><table><tr></tr></table></section>
+    <section class="list1"><table><tr></tr></table></section>
+
+    <div class="footer">
+      <p>Made with ❤ by Audrey Wang © 2020</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function copyClipboard(a) {
+        var copyText = document.getElementById(a).innerHTML;
+        var input = document.createElement("input");
+        input.value = copyText;
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand("copy");
+        document.body.removeChild(input); 
+      }
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+
+      var a1 = $(".q1");
+      var a2 = $(".q2");
+      var a3 = $(".q3");
+      var a4 = $(".q4");
+      var a5 = $(".q5");
+      var a6 = $(".q6");
+      var a7 = $(".q7");
+      var a8 = $(".q8");
+      var a9 = $(".q9");
+      var a10 = $(".q10");
+      var a11 = $(".q11");
+      var a12 = $(".q12");
+      var a13 = $(".q13");
+      var a14 = $(".q14");
+      var a15 = $(".q15");
+      var a151 = $(".q151");
+      var a16 = $(".q16");
+      var a161 = $(".q161");
+      var a17 = $(".q17");
+      var a171 = $(".q171");
+      var a18 = $(".q18");
+      var a181 = $(".q181");
+      var a19 = $(".q19");
+      var a191 = $(".q191");
+      var a20 = $(".q20");
+      var a201 = $(".q201");
+      var a202 = $(".q202");
+      var a21 = $(".q21");
+      var a211 = $(".q211");
+
+      var list = $(".list");
+      var list1 = $(".list1");
+      var submit = $(".submit");
+      submit.on("click", checkAns);
+      function checkAns(e) {
+        e.preventDefault();
+        var a1 = $(".q1").val();
+        if (a1 === "f") { list.append(`<td style="background-color: #06d6a0;"><b>#1</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#1</b> is incorrect.</td>`); }
+        var a2 = $(".q2").val();
+        if (a2 === "b") { list.append(`<td style="background-color: #06d6a0;"><b>#2</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#2</b> is incorrect.</td>`); }
+        var a3 = $(".q3").val();
+        if (a3 === "m") { list.append(`<td style="background-color: #06d6a0;"><b>#3</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#3</b> is incorrect.</td>`); }
+        var a4 = $(".q4").val();
+        if (a4 === "p") { list.append(`<td style="background-color: #06d6a0;"><b>#4</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#4</b> is incorrect.</td>`); }
+        
+        var a5 = $(".q5").val();
+        if (a5 === "d") { list.append(`<td style="background-color: #06d6a0;"><b>#5</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#5</b> is incorrect.</td>`); }
+        var a6 = $(".q6").val();
+        if (a6 === "t") { list.append(`<td style="background-color: #06d6a0;"><b>#6</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#6</b> is incorrect.</td>`); }
+        var a7 = $(".q7").val();
+        if (a7 === "n") { list.append(`<td style="background-color: #06d6a0;"><b>#7</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#7</b> is incorrect.</td>`); }
+        var a8 = $(".q8").val();
+        if (a8 === "l") { list.append(`<td style="background-color: #06d6a0;"><b>#8</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#8</b> is incorrect.</td>`); }
+
+        var a9 = $(".q9").val();
+        if (a9 === "k") { list.append(`<td style="background-color: #06d6a0;"><b>#9</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#9</b> is incorrect.</td>`); }
+        var a10 = $(".q10").val();
+        if (a10 === "g") { list.append(`<td style="background-color: #06d6a0;"><b>104</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#10</b> is incorrect.</td>`); }
+        var a11 = $(".q11").val();
+        if (a11 === "h") { list.append(`<td style="background-color: #06d6a0;"><b>#11</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#11</b> is incorrect.</td>`); }
+
+        var a12 = $(".q12").val();
+        if (a12 === "t") { list.append(`<td style="background-color: #06d6a0;"><b>#12</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#12</b> is incorrect.</td>`); }
+        var a13 = $(".q13").val();
+        if (a13 === "m") { list.append(`<td style="background-color: #06d6a0;"><b>#13</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#13</b> is incorrect.</td>`); }
+        var a14 = $(".q14").val();
+        if (a14 === "f") { list.append(`<td style="background-color: #06d6a0;"><b>#14</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#14</b> is incorrect.</td>`); }
+
+        var a15 = $(".q15").val();
+        var a151 = $(".q151").val();
+        if (a15 === "ā" && a151 === "e") { list.append(`<td style="background-color: #06d6a0;"><b>#15</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#15</b> is incorrect.</td>`); }
+        var a16 = $(".q16").val();
+        var a161 = $(".q161").val();
+        if (a16 === "à" && a161 === "ǐ") { list.append(`<td style="background-color: #06d6a0;"><b>#16</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#16</b> is incorrect.</td>`); }
+        var a17 = $(".q17").val();
+        var a171 = $(".q171").val();
+        if (a17 === "ǎ" && a171 === "ù") { list.append(`<td style="background-color: #06d6a0;"><b>#17</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#17</b> is incorrect.</td>`); }
+        var a18 = $(".q18").val();
+        var a181 = $(".q181").val();
+        if (a18 === "á" && a181 === "ǐ") { list.append(`<td style="background-color: #06d6a0;"><b>#18</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#18</b> is incorrect.</td>`); }
+        var a19 = $(".q19").val();
+        var a191 = $(".q191").val();
+        if (a19 === "á" && a191 === "ǐ") { list.append(`<td style="background-color: #06d6a0;"><b>#19</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#19</b> is incorrect.</td>`); }
+        var a20 = $(".q20").val();
+        var a201 = $(".q201").val();
+        var a202 = $(".q202").val();
+        if (a20 === "ē" && a201 === "ě" && a202 === "è") { list.append(`<td style="background-color: #06d6a0;"><b>#20</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#20</b> is incorrect.</td>`); }
+        var a21 = $(".q21").val();
+        var a211 = $(".q211").val();
+        if (a21 === "à" && a211 === "ē") { list.append(`<td style="background-color: #06d6a0;"><b>#21</b> is correct!</td>`);
+        } else { list1.append(`<td style="background-color: #ef476f;"><b>#21</b> is incorrect.</td>`); }
+      }
+    </script>
+    
+    
+  </body>
+</html>
