@@ -117,7 +117,11 @@ button {
   background-color: #0f4c5c;
   color: white;
 }
-.submit {
+.submit,
+.submit1,
+.submit2,
+.submit3,
+.submit4 {
   font-size: 20px !important;
 }
 header,
