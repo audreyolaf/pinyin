@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "EB Garamond", serif;
+}
+body {
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section h1 {
+  position: relative;
+  font-size: 9em;
+}
+
+.content {
+  padding: 20px;
+  box-sizing: border-box;
+  /* display: flex !important;
+  justify-content: center !important;
+  align-items: center !important; */
+}
+.box {
+  position: relative;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 5% 30em 15% 30em;
+  /* width: 600px;
+  height: 400px; */
+  padding: 5%;
+  background: #111;
+}
+.box:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+.box:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+}
+.box:before,
+.box:after {
+  background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+}
+/* body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+} */
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0006);
+}
+h2 {
+  text-align: center;
+  font-size: 5vh;
+}
+h3 {
+  text-align: center;
+  font-size: 3vh;
+}

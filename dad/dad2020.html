@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <meta charset="UTF-8" />
+    <title>Dad 2020</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <section>
+        <img src="img/1.png" data-speed="-5" class="layer">
+        <img src="img/2.png" data-speed="5" class="layer">
+        <img src="img/3.png" data-speed="2" class="layer">
+        <img src="img/4.png" data-speed="6" class="layer">
+        <img src="img/5.png" data-speed="8" class="layer">
+        <img src="img/6.png" data-speed="-2" class="layer">
+        <img src="img/7.png" data-speed="4" class="layer">
+        <img src="img/8.png" data-speed="-9" class="layer">
+        <img src="img/9.png" data-speed="6" class="layer">
+        <img src="img/10.png" data-speed="-7" class="layer">
+        <img src="img/11.png" data-speed="-5" class="layer">
+        <img src="img/12.png" data-speed="5" class="layer">
+        <h1 class="layer" data-speed="2">Happy birthday Dad!🎉</h1>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>A fanastic picture reel</h2>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" ><img src="dad_pics/img1.1.JPG"></div>
+        <div class="swiper-slide" ><img src="dad_pics/img2.1.JPG"></div>
+        <div class="swiper-slide" ><img src="dad_pics/img3.1.JPG"></div>
+        <div class="swiper-slide" ><img src="dad_pics/img4.1.JPG"></div>
+        <div class="swiper-slide" ><img src="dad_pics/img5.1.JPG"></div>
+        <div class="swiper-slide" ><img src="dad_pics/img6.1.JPG"></div>
+        <div class="swiper-slide" ><img src="dad_pics/img7.1.JPG"></div>
+        <div class="swiper-slide" ><img src="dad_pics/img8.1.JPG"></div>
+        <div class="swiper-slide" ><img src="dad_pics/img9.1.JPG"></div>
+        <div class="swiper-slide" ><img src="dad_pics/img10.1.JPG"></div>
+        <div class="swiper-slide" ><img src="dad_pics/img11.1.JPG"></div>
+        <div class="swiper-slide" ><img src="dad_pics/img12.1.JPG"></div>
+
+      </div>
+    </div>
+    <br>
+    <h3>*Note: it is automated, but can be scrolled by dragging left and right.</h3>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h2>A letter for you💕</h2><br>
+      <div class="box">
+        <div class="content">
+          <h2>Dear Dad,</h2><br>
+          <h3>Happy ~51st~ birthday Daddy!!🥳 Especially during shelter in place, 
+            thank you for being a fun person to talk to about the quirky or interesting
+            ideas floating in my brain. Thank you for the trips we go to, the hugs 
+            (I usually hug a bunch of people at school hehe), supporting me in my 
+            coding journey, advice, and all the fatherly things. 
+            Hope you enjoy (and have fun playing with) all the sneaky/ favorite reaction 
+            pictures I have of you, and I love you💕 </h3>
+        </div>
+      </div>
+    <script type="text/javascript">
+    document.addEventListener("mousemove", parallax);
+    function parallax(e) {
+        this.querySelectorAll('.layer').forEach(layer => {
+            const speed = layer.getAttribute('data-speed')
+            const x = (window.innerWidth - e.pageX*speed)/100
+            const y = (window.innerHeight - e.pageY*speed)/100
+            layer.style.transform = `translate(${x}px) translateY(${y}px)`
+        })
+    }
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+      var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      loop: true,
+    });
+    </script>
+  </body>
+</html>
